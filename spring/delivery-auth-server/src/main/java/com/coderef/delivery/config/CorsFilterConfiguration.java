@@ -11,6 +11,11 @@ import org.springframework.web.filter.CorsFilter;
 @Configuration
 public class CorsFilterConfiguration {
 
+    /**
+     *  Filtro que permite que uma requisição chegue ao Servidor independente das "crendenciais, origin, header e method".
+     *  Invocado no inicio de uma requisição ao Servidor de autorização.
+     * @return
+     */
     @Bean
     public FilterRegistrationBean corsFilter() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
