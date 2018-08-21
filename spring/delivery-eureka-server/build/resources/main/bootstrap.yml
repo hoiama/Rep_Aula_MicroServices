@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: delivery-eureka-server #Nome do arquivo de configuração ".properties ou .yml" no servidor de configuração.
+  cloud:
+    config:
+      uri: http://localhost:9090 #Busca pelo servidor de configurações existente que foi configurado neste endereço.

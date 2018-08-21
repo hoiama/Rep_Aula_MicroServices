@@ -1,9 +1,9 @@
 server:
-  port: 9090
+  port: 9090 #Porta usada para acessar os arquivos de configuração através do "localhost"
 
 spring:
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/hoiama/server_configs
+          uri: https://github.com/hoiama/server_configs #Caminho do Servidor de configurações, neste caso nao é local.
