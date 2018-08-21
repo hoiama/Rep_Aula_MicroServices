@@ -9,9 +9,11 @@
 
 rootProject.name = 'spring'
 
-include 'delivery-config-server','delivery-eureka-server','delivery-auth-server', 'delivery-order-service'
+include 'delivery-config-server','delivery-eureka-server','delivery-auth-server', 'delivery-order-service', 'delivery-zuul-server','delivery-endpoint-server'
 
 project(':delivery-eureka-server').projectDir = new File(settingsDir,'delivery-eureka-server')
 project(':delivery-config-server').projectDir = new File(settingsDir,'delivery-config-server')
 project(':delivery-auth-server').projectDir = new File(settingsDir,'delivery-auth-server')
 project(':delivery-order-service').projectDir = new File(settingsDir,'delivery-order-service')
+project(':delivery-zuul-server').projectDir = new File(settingsDir,'delivery-zuul-server')
+project(':delivery-endpoint-server').projectDir = new File(settingsDir,'delivery-endpoint-server')

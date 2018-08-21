@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+zuul:
+  routes:
+    testerotas:
+      url: http://localhost:8090
+
+ribbon:
+  eureka:
+    enabled: false
+
+
+
