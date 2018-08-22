@@ -3,8 +3,14 @@ server:
 
 zuul:
   routes:
-    testerotas: #Aqui é a rota "/testerotas" que passará para "http://localhost:8090"
+    testerotas1:  #Aqui é a rota "/testerotas" que passará para "http://localhost:8090"
+      paths:
+        $ref:
+        - "/testerotas1/**"
+        - "/testerotas2/**"
       url: http://localhost:8090
+
+
 
 ribbon:
   eureka:
