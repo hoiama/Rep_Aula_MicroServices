@@ -7,22 +7,25 @@ public class RouteFilter extends ZuulFilter {
 
     @Override
     public String filterType() {
+        System.out.println("RouterFilter :: filterType");
         return "route";
     }
 
     @Override
     public int filterOrder() {
+        System.out.println("RouteFilter :: filterOrder");
         return 1;
     }
 
     @Override
     public boolean shouldFilter() {
+        System.out.println("RouteFilter :: shouldFilter");
         return true;
     }
 
     @Override
     public Object run() throws ZuulException {
-        System.out.println("Inside Route Filter");
+        System.out.println("RouteFilter :: run");
         return null;
     }
 }

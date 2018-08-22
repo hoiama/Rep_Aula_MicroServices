@@ -1,7 +1,9 @@
-package br.com.hoiama;
+package br.com.hoiama.main;
 
+import br.com.hoiama.filtros.ErrorFilter;
 import br.com.hoiama.filtros.PostFilter;
 import br.com.hoiama.filtros.PreFilter;
+import br.com.hoiama.filtros.RouteFilter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
@@ -25,6 +27,16 @@ public class Zuul {
 
     @Bean
     public PostFilter postFilter(){
-        return postFilter();
+        return new PostFilter();
+    }
+
+    @Bean
+    public RouteFilter routeFilter(){
+        return new RouteFilter();
+    }
+
+    @Bean
+    public ErrorFilter errorFilter() {
+        return new ErrorFilter();
     }
 }

@@ -3,7 +3,7 @@ server:
 
 zuul:
   routes:
-    testerotas:
+    testerotas: #Aqui é a rota "/testerotas" que passará para "http://localhost:8090"
       url: http://localhost:8090
 
 ribbon:
