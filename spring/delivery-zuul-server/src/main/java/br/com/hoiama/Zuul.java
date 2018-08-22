@@ -1,4 +1,4 @@
-package br.com.hoiama.main;
+package br.com.hoiama;
 
 import br.com.hoiama.filtros.ErrorFilter;
 import br.com.hoiama.filtros.PostFilter;

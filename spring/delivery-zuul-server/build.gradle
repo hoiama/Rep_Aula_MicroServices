@@ -6,7 +6,6 @@ targetCompatibility = 1.8
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web:2.0.0.RELEASE")
-    compile("org.springframework.boot:spring-cloud-starter-config:2.0.0.RELEASE")
     compile("org.springframework.cloud:spring-cloud-starter-netflix-zuul:2.0.0.RELEASE")
     testCompile("org.springframework.boot:spring-boot-starter-test:2.0.0.RELEASE")
 }
