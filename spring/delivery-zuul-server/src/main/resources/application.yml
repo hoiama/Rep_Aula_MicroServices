@@ -4,10 +4,7 @@ server:
 zuul:
   routes:
     testerotas1:  #Aqui é a rota "/testerotas" que passará para "http://localhost:8090"
-      paths:
-        $ref:
-        - "/testerotas1/**"
-        - "/testerotas2/**"
+      path: /testerotas/**
       url: http://localhost:8090
 
 
