@@ -11,7 +11,7 @@ public class Consumer {
      * @Payload: É a anotação que informa que o parâmetro vai receber o corpo da mensagem.
      * @param
      */
-    @RabbitListener(queues ="${jsa.rabbitmq.queue}")
+    @RabbitListener(queues="${jsa.rabbitmq.queue}") //É a anotação que marca o método como um listener;
     public void receivedMenssage(String msg){
         System.out.println("Recieved Message: " + msg);
     }
