@@ -1,6 +1,8 @@
 package br.com.hoiama.entity;
 
+import lombok.Data;
 
+@Data
 public class Aluno {
 
     private Long idAluno;
