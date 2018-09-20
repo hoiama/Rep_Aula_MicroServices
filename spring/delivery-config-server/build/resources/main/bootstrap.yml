@@ -1,3 +1,0 @@
-spring:
-  application:
-    name: educafacil-config-server #Nome do servidor de configuração
