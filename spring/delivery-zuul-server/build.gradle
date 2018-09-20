@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web:2.0.0.RELEASE")
+    compile("org.springframework.cloud:spring-cloud-starter-netflix-zuul:2.0.0.RELEASE")
+    testCompile("org.springframework.boot:spring-boot-starter-test:2.0.0.RELEASE")
+    compileOnly ("org.springframework.boot:spring-boot-configuration-processor:2.0.0.RELEASE")
+    compileOnly "org.projectlombok:lombok:1.16.16"
+}
+
+repositories {
+    mavenCentral()
+}
