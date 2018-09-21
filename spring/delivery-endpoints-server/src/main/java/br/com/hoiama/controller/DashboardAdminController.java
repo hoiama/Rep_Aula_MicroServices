@@ -1,11 +1,12 @@
 package br.com.hoiama.controller;
 
+import br.com.hoiama.entity.Aluno;
 import br.com.hoiama.service.DataService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @Controller
 public class DashboardAdminController {
@@ -15,8 +16,23 @@ public class DashboardAdminController {
 
     @ResponseBody
     @GetMapping("/get")
-    public String getAlunos(){
-        service.getAluno();
-        return "Chamada do endPoint";
+    public List<Aluno> getAlunos(){
+        System.out.println("getAlunos");
+        return service.getAluno();
+    }
+
+    @ResponseBody
+    @PostMapping("/post")
+    public void postAlunos(
+            @RequestParam ("nome") String nome,
+            @RequestParam ("instituicao") String instituicao){
+
+        Aluno aluno = new Aluno();
+        aluno.setNome(nome);
+        aluno.setInstituição(instituicao);
+
+        service.postAluno(aluno);
+        System.out.println("postAlunos :: " + nome);
+
     }
 }
