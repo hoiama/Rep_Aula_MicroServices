@@ -5,34 +5,40 @@ import br.com.hoiama.service.DataService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
+import java.util.Optional;
 
 @Controller
 public class DashboardAdminController {
 
     @Autowired
-    DataService service;
+    private DataService service;
+
 
     @ResponseBody
-    @GetMapping("/get")
+    @GetMapping("/findAll")
     public List<Aluno> getAlunos(){
         System.out.println("getAlunos");
-        return service.getAluno();
+        return service.findAllAlunos();
     }
+
+
+    @ResponseBody
+    @GetMapping ("/findById")
+    public Optional<Aluno> findAlunoById(
+            @RequestParam ("idAluno") Long idAluno){
+
+        return service.findByIdAluno(idAluno);
+    }
+
 
     @ResponseBody
     @PostMapping("/post")
-    public void postAlunos(
+    public String postAlunos(
             @RequestParam ("nome") String nome,
             @RequestParam ("instituicao") String instituicao){
 
-        Aluno aluno = new Aluno();
-        aluno.setNome(nome);
-        aluno.setInstituição(instituicao);
-
-        service.postAluno(aluno);
-        System.out.println("postAlunos :: " + nome);
-
+        service.postAluno(nome, instituicao);
+        return "postAlunos :: " + nome;
     }
 }

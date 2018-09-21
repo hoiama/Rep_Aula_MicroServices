@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Component
 public class DataService {
@@ -14,12 +15,21 @@ public class DataService {
     @Autowired
     private AlunoRepository alunoRepository;
 
-    public List<Aluno> getAluno(){
+    public List<Aluno> findAllAlunos(){
         System.out.println("Serviço do aluno");
         return alunoRepository.findAll();
     }
 
-    public void postAluno(Aluno aluno){
+
+    public Optional findByIdAluno(Long idAluno){
+        return alunoRepository.findById(idAluno);
+    }
+
+
+    public void postAluno(String nome, String instituicao) {
+        Aluno aluno = new Aluno();
+        aluno.setInstituição(instituicao);
+        aluno.setNome(nome);
         alunoRepository.save(aluno);
     }
 
