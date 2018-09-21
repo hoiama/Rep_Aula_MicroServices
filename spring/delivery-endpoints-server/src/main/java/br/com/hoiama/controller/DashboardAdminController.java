@@ -8,15 +8,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-
-@RequestMapping(value = "/aluno")
 public class DashboardAdminController {
 
     @Autowired
     DataService service;
 
-    @GetMapping("/get")
     @ResponseBody
+    @GetMapping("/get")
     public String getAlunos(){
         service.getAluno();
         return "Chamada do endPoint";
