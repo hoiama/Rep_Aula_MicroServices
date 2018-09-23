@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Currículo Hoiama</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="/css/reset.css" />
+	<link rel="stylesheet" href="/css/reset.css" />
+	<link rel="stylesheet" href="/css/curriculo.css" />
+	<link rel="javascript" href="/javascript/curriculo.js" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:500" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600" />
+</head>
+<body>
+
+	<div class="div_001">
+		<img class="img_001" alt="imagem_titulo" src="/imagens/curriculo_titulo_fundo.jpg" /> 
+		<img class="img_002" alt="imagem_titulo" src="/imagens/curriculo_foto.png" />
+	</div>
+
+	<h3 class="centralizar">Hoiama Rodrigues</h3>
+	
+	<div class="div_002">
+		<div th:each="resumo : ${curriculo.resumo}">
+			<h4><span th:text="${resumo.profissao}"></span></h4>
+			<p class="justificado"> <span th:text="${resumo.objetivo}"></span></p>
+			<p class="justificado"> <span th:text="${resumo.resumo}"></span></p>
+		</div>
+		
+		<h3 class="alinhamento_esquerdo">Formação acadêmica</h3>
+		<table>
+			<tr th:each= "formacao : ${curriculo.formacao}">
+				<td><img class="img_003" src="/imagens/Formacao2.png"></td>
+				<td>
+					<ul class="none">
+						<li> <span th:text="${formacao.nomeCurso}"></span></li>
+						<li> <span th:text="${formacao.instituicao}"></span></li>
+						<li><span th:text="${formacao.ano}"></span></li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+		<h3 class="alinhamento_esquerdo">Experiência</h3>
+		<table>
+			<tr th:each="experiencia : ${curriculo.experiencia}">
+				<td><img class="img_003" src="/imagens/Formacao2.png"></td>
+				<td>
+					<ul class="none">
+						<li><span th:text="${experiencia.nomeEmpresa}"> </span> </li>
+						<li><span th:text="${experiencia.experiencia}"> </span> </li>
+					</ul>
+				</td>
+			</tr>	
+		</table>
+		<h3 class="alinhamento_esquerdo">Cursos e habilidades</h3>
+		<table class="tabela_espacada">
+			<tr th:each="curso : ${curriculo.curso}">
+				<td><img class="img_cursos" src="/imagens/Empresa5.png"></td>
+				<td>
+					<ul class="none">
+						<li><span th:text="${curso.nomeCurso}"></span></li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	<aside>
+		<ul class="redesocial">
+			<li><img class="img_cursos" src="/imagens/Empresa5.png"></li>
+			<li><img class="img_cursos" src="/imagens/Empresa5.png"></li>
+		</ul>
+	</aside>
+	<footer>
+		<ul class="redesocial">
+			<li><img class="img_cursos" src="/imagens/Empresa5.png"></li>
+			<li><img class="img_cursos" src="/imagens/Empresa5.png"></li>
+		</ul>
+	</footer>
+</body>
+</html>

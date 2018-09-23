@@ -33,6 +33,15 @@ public class DashboardAdminController {
 
 
     @ResponseBody
+    @GetMapping("/findByInstituicao")
+    public List<Aluno> findAlunoByInstituicao(
+            @RequestParam("instituicao") String instituicao){
+
+        return service.findAlunoByInstituicao(instituicao);
+    }
+
+
+    @ResponseBody
     @PostMapping("/post")
     public String postAlunos(
             @RequestParam ("nome") String nome,

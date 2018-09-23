@@ -10,6 +10,7 @@ import java.util.Optional;
 @Repository
 public interface AlunoRepository extends JpaRepository<Aluno, Long> {
 
-    List<Aluno> findAlunoByIdAluno(Long aLong);
+    List<Aluno> findAlunoByIdAlunoOrderByNome(Long aLong);
+
 
 }

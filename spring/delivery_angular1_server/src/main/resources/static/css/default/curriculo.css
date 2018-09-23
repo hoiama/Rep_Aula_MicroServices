@@ -1,0 +1,269 @@
+	@CHARSET "UTF-8";
+	
+/* ---------->>> NORMALIZAÇÃO <<<-----------
+*
+*	seletor {
+*  		[fonte e propriedades de texto]
+*   	[plano de fundo]
+*   	[tamanho]
+*   	[bordas]
+*    	[espaçamentos]
+*    	[posicionamento]
+*	}
+*
+*/
+
+/* -----------------------------------*/
+/* --------->>> Cabeçalho <<<---------*/
+/* -----------------------------------*/
+
+
+.div_002{
+	background-color: white;
+	box-sizing: border-box;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	padding: 50px
+	
+}
+
+/* -----------------------------------*/
+/* ---------->>> GLOBAL <<<-----------*/
+/* -----------------------------------*/
+
+body {
+	background-color:#eeeeec;	
+	color: #3a3838;
+	margin: 0px;
+	font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 25.7167px;
+}
+	
+	
+h1 {
+	font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+
+
+h2 {
+	font-family: "Open Sans Condensed", "Arial", sans-serif;
+}
+
+
+h3 {
+	font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	font-size: 16pt;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 600;
+	line-height: 15.4px;
+}
+
+
+h4{
+	font-size: 15pt;
+	text-align: center;
+	color: #2e3436;	
+}
+
+
+p {
+	font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 25.7167px;
+}
+
+
+blockquote {
+	font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+
+pre {
+	font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5667px;
+}
+	
+
+p {
+	font-weight: 400;
+	text-indent: 20px;
+	text-align: justifiy;
+	text-transform: captalize;
+	margin-top: 20px;
+	margin-bottom: 20px; 
+}
+
+
+tr{
+	padding: 30px;
+}
+
+
+table tr td {
+	padding-bottom:10px;
+	padding-top: 10px;
+}
+
+
+footer{
+	background-color: #2e3436;
+	height: 80px;
+}
+
+	footer li {
+		display: inline-block;
+	}
+
+
+aside li{
+	display: inline-block;
+	
+}
+
+
+ul.none {
+	list-style-type: none;
+	margin: auto; 
+}
+
+
+
+
+
+/* -----------------------------------*/
+/* ---------->>> Estrutura <<<--------*/
+/* -----------------------------------*/
+
+
+
+
+/* -----------------------------------*/
+/* ----------->>> Rodapé  <<<---------*/
+/* -----------------------------------*/
+
+
+
+
+/* -----------------------------------*/
+/* ---->>> Estilos de títulos <<<-----*/
+/* -----------------------------------*/
+
+
+
+/* -----------------------------------*/
+/* ---->>> Estilos de texto <<<-------*/
+/* -----------------------------------*/
+
+
+
+/* -----------------------------------*/
+/* -------->>> Navegação <<<----------*/
+/* -----------------------------------*/
+
+
+/* -----------------------------------*/
+/* -------->>> Formulários <<<--------*/
+/* -----------------------------------*/
+
+
+/* -----------------------------------*/
+/* ---------->>> Imagens <<<----------*/
+/* -----------------------------------*/
+
+
+
+
+.img_002{
+	width: 130px;
+	height: 130px;
+	position: absolute;
+ 		top: 0;
+ 		left: 0;
+ 		right: 0;
+		bottom: 0;
+		margin: auto;	
+}
+
+
+.img_003{
+	width: 70px;
+	height: 70px;
+	display: block;
+   	margin-left: auto;
+   	margin-right: auto 
+}
+
+
+.img_cursos{
+	width: 30px;
+	height: 30px;
+	display: block;
+   	margin-left: auto;
+   	margin-right: auto 
+}
+
+
+
+/* -----------------------------------*/
+/* -------->>> Extras  <<<------------*/
+/* -----------------------------------*/
+
+.justificado{
+	text-align: justify;
+}
+
+.centralizar{
+	text-align: center;
+}
+
+.div_001{
+	width: 1000px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	
+}
+	
+		
+
+
+
+.alinhamento_cima{
+ vertical-align: text-top;
+ padding-top: 15px;
+}
+
+
+.alinhamento_esquerdo{
+	text-align: left;
+}
+
+
+
+	
+	

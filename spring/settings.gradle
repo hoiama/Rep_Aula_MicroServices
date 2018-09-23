@@ -9,7 +9,17 @@
 
 rootProject.name = 'spring'
 
-include 'delivery-config-server','delivery-eureka-server','delivery-auth-server', 'delivery-order-service', 'delivery-zuul-server','delivery-endpoints-server'
+include 'delivery-auth-server',
+        'delivery-config-server',
+        'delivery-endpoints-server',
+        'delivery-eureka-server',
+        'delivery-order-service',
+        'delivery-zuul-server',
+        'delivery-rabbitmq-server',
+        'delivery-mongodb-server',
+        'delivery-order-service',
+        'delivery_angular1_server'
+
 
 project(':delivery-eureka-server').projectDir = new File(settingsDir,'delivery-eureka-server')
 project(':delivery-config-server').projectDir = new File(settingsDir,'delivery-config-server')
@@ -17,3 +27,7 @@ project(':delivery-auth-server').projectDir = new File(settingsDir,'delivery-aut
 project(':delivery-order-service').projectDir = new File(settingsDir,'delivery-order-service')
 project(':delivery-zuul-server').projectDir = new File(settingsDir,'delivery-zuul-server')
 project(':delivery-endpoints-server').projectDir = new File(settingsDir,'delivery-endpoints-server')
+project(':delivery-rabbitmq-server').projectDir = new File(settingsDir,'delivery-rabbitmq-server')
+project(':delivery-mongodb-server').projectDir = new File(settingsDir,'delivery-mongodb-server')
+project(':delivery-order-service').projectDir = new File(settingsDir,'delivery-order-service')
+project(':delivery_angular1_server').projectDir = new File(settingsDir,'delivery_angular1_server')

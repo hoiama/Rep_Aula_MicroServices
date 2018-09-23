@@ -25,6 +25,10 @@ public class DataService {
         return alunoRepository.findById(idAluno);
     }
 
+    public List<Aluno> findAlunoByInstituicao(String instituicao){
+        return alunoRepository.findAlunosByInstituicao(instituicao);
+    }
+
 
     public void postAluno(String nome, String instituicao) {
         Aluno aluno = new Aluno();
