@@ -18,7 +18,8 @@ include 'delivery-auth-server',
         'delivery-rabbitmq-server',
         'delivery-mongodb-server',
         'delivery-order-service',
-        'delivery_angular1_server'
+        'delivery_angular1_server',
+        'module-swagger'
 
 
 project(':delivery-eureka-server').projectDir = new File(settingsDir,'delivery-eureka-server')
@@ -31,3 +32,4 @@ project(':delivery-rabbitmq-server').projectDir = new File(settingsDir,'delivery
 project(':delivery-mongodb-server').projectDir = new File(settingsDir,'delivery-mongodb-server')
 project(':delivery-order-service').projectDir = new File(settingsDir,'delivery-order-service')
 project(':delivery_angular1_server').projectDir = new File(settingsDir,'delivery_angular1_server')
+project(':module-swagger').projectDir = new File(settingsDir,'module-swagger')
