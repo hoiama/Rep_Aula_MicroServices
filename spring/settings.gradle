@@ -9,27 +9,27 @@
 
 rootProject.name = 'spring'
 
-include 'delivery-auth-server',
-        'delivery-config-server',
-        'delivery-endpoints-server',
-        'delivery-eureka-server',
-        'delivery-order-service',
-        'delivery-zuul-server',
-        'delivery-rabbitmq-server',
-        'delivery-mongodb-server',
-        'delivery-order-service',
-        'delivery_angular1_server',
+include 'module-auth-server',
+        'module-config-server',
+        'module-endpoints-server',
+        'module-eureka-server',
+        'module-order-service',
+        'module-zuul-server',
+        'module-rabbitmq-server',
+        'module-mongodb-server',
+        'module-order-service',
+        'module_angular1_server',
         'module-swagger'
 
 
-project(':delivery-eureka-server').projectDir = new File(settingsDir,'delivery-eureka-server')
-project(':delivery-config-server').projectDir = new File(settingsDir,'delivery-config-server')
-project(':delivery-auth-server').projectDir = new File(settingsDir,'delivery-auth-server')
-project(':delivery-order-service').projectDir = new File(settingsDir,'delivery-order-service')
-project(':delivery-zuul-server').projectDir = new File(settingsDir,'delivery-zuul-server')
-project(':delivery-endpoints-server').projectDir = new File(settingsDir,'delivery-endpoints-server')
-project(':delivery-rabbitmq-server').projectDir = new File(settingsDir,'delivery-rabbitmq-server')
-project(':delivery-mongodb-server').projectDir = new File(settingsDir,'delivery-mongodb-server')
-project(':delivery-order-service').projectDir = new File(settingsDir,'delivery-order-service')
-project(':delivery_angular1_server').projectDir = new File(settingsDir,'delivery_angular1_server')
+project(':module-eureka-server').projectDir = new File(settingsDir,'module-eureka-server')
+project(':module-config-server').projectDir = new File(settingsDir,'module-config-server')
+project(':module-auth-server').projectDir = new File(settingsDir,'module-auth-server')
+project(':module-order-service').projectDir = new File(settingsDir,'module-order-service')
+project(':module-zuul-server').projectDir = new File(settingsDir,'module-zuul-server')
+project(':module-endpoints-server').projectDir = new File(settingsDir,'module-endpoints-server')
+project(':module-rabbitmq-server').projectDir = new File(settingsDir,'module-rabbitmq-server')
+project(':module-mongodb-server').projectDir = new File(settingsDir,'module-mongodb-server')
+project(':module-order-service').projectDir = new File(settingsDir,'module-order-service')
+project(':module_angular1_server').projectDir = new File(settingsDir,'module_angular1_server')
 project(':module-swagger').projectDir = new File(settingsDir,'module-swagger')
